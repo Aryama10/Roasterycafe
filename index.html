@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Roastery Coffee</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+      font-family: Arial, sans-serif;
+    }
+    body{
+      background-color: #f6efe8;
+      color: #333;
+    }
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: #ffffff;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    header nav {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 15px; 
+      background: #f6efe8;
+      color: #333;
+    }
+    header nav a {
+      text-decoration: none;
+      color: #333;
+      margin: 0 10px;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 80px 10%;
+      min-height: 100vh;
+    }
+
+    /* Home */
+    #home {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    #home img {
+      width: 45%;
+      border-radius: 10px;
+    }
+
+    /* Gallery */
+    #gallery img {
+      width: 30%;
+      margin: 1%;
+      border-radius: 10px;
+    }
+
+    /* Footer Contact Form */
+    form input,
+    form textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 5px;
+      border: 1px solid #aaa;
+    }
+
+    form button {
+      padding: 10px 20px;
+      background: #333;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#menu">Menu</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#services">Services</a>
+      <a href="#blog">Blog</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- 1 Home -->
+  <section id="home">
+    <div>
+      <h1 style="font-size:45px;">Welcome to<br> Roastery Coffee</h1>
+      <p>Your favorite place to sip, relax & enjoy.</p>
+    </div>
+    <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93" alt="Coffee">
+  </section>
+
+  <!-- 2 About -->
+  <section id="about">
+    <h2>About Us</h2>
+    <p style="margin-top:20px;">At Roastery Coffee, we serve handcrafted brews with passion and love. Our beans come
+      from carefully selected farms around the world, roasted to perfection to bring you the finest experience.</p>
+    <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348" alt="About" style="width: 100%; margin-top:20px; border-radius:10px;">
+  </section>
+  <!--3 youtube video-->
+  <style>
+    .video-container {
+      display:flex;
+      justify-content: center;
+      margin: 20px;
+    }
+.video-container iframe {
+  width: 700px;   /* change the width */
+  height: 400px;  /* change the height */ 
+}
+  </style>
+  <div class="video-container">
+  <iframe 
+  src="https://www.youtube-nocookie.com/embed/eWbmuZ1epIQ?si=c0ZJkAY5fHtR0mu"
+  title="Youtube video"
+  frameborder="0"
+  allowfullscreen></iframe>
+  </div>
+
+  <!-- 4 Menu -->
+  <section id="menu">
+    <h2>Our Menu</h2>
+    <ul style="margin-top:20px; line-height:35px; font-size:18px;">
+      <li>Espresso — ₹99</li>
+      <li>Latte — ₹149</li>
+      <li>Cappuccino — ₹139</li>
+      <li>Mocha — ₹159</li>
+      <li>Cold Brew — ₹179</li>
+      <li>Hazelnut Frappe — ₹199</li>
+      <li>Sandwiches - ₹200</li>
+      <li>Pastries - ₹125</li>
+      <li>Alfredo pasta - ₹350</li>
+      <li>White sauce pasta - ₹400</li>
+    </ul>
+  </section>
+
+  <!-- 5 Gallery -->
+  <section id="gallery">
+    <h2>Gallery</h2>
+    <div style="margin-top:20px;">
+      <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836" />
+      <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93" />
+      <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348" />
+    </div>
+  </section>
+
+  <!-- 6 Services -->
+  <section id="services">
+    <h2>Services</h2>
+    <ul style="margin-top:20px; line-height:35px; font-size:18px;">
+      <li>Outdoor & Indoor Seating</li>
+      <li>Free Wi-Fi</li>
+      <li>Home Delivery</li>
+      <li>Coffee Workshops</li>
+      <li>Custom Gift Hampers</li>
+    </ul>
+  </section>
+
+  <!-- 7 Blog -->
+  <section id="blog">
+    <h2>Our Blog</h2>
+    <div style="margin-top:20px;">
+      <h3>☕ Brewing happiness at Roastery Coffee</h3>
+      <p>There's something magical about the aroma of freshly brewed coffee and at Roastery Coffee, that magic comes to life every single day. Nested in the heart of the city, our cosy café is more than just a place to grab a drink-it's a warm and welcoming spot where stories are shared, ideas are brewed, and memories are made.</p>
+      <br>
+      <p>From the first crack of premium coffee beans to the last sip in your cuo, we believe in delivering freshness, flavour, and a whole lot of love. Our beans are hand-picked, slow roasted, and brewed to perfection to give you a cup that feels like a hug in every sip. Whether you're a fan of creamy cappuccinos, bold espressos, or dreamy lattes, Roastery Coffee has something just for you.</p>
+      <br>
+      <p>But we're not only about great coffee! Pair your drink with our freshly baked pastries, gooey brownies, or crunchy sandwiches and many other things made freshly to keep your cravings satisfied.</p>
+    </div>
+  </section>
+
+  <!-- 8 Contact -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+
+    <p style="margin-top:20px;">
+      📍 Roastery Coffee House, Jahangirabad Palace, Hazratganj, Lucknow<br>
+      📞  +91 95590 60446<br>
+      ✉️ support@roasterycoffee.co.in
+    </p>
+
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea rows="5" placeholder="Your Message..." required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+
+    <h3 style="margin-top:30px;">Find us on Google Maps:</h3>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3559.610694351715!2d80.93876!3d26.852332!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399bfd4287f99b4d%3A0x498523985b46f5ea!2sRoastery%20Coffee%20House%20%7C%20Jahangirabad%20Palace!5e0!3m2!1sen!2sin!4v1754227710719!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+</body>
+
+</html>
